@@ -73,14 +73,9 @@ for (const item of types) {
   
 }
 typeDisplayDiv.appendChild(ulElement);
-burger.addEventListener('click',()=>{
-    const ulElement = document.createElement('ul');
 
-    for (const item of burgerlist) {
-        const liElement = document.createElement('li');
-        liElement.textContent = item.burgerlist;
-  }}
-  )
+
+
   
 
 
