@@ -1,59 +1,39 @@
-const categoriesdisplay = document.getElementById("categories")
-const search = document.getElementById("search")
-const sortby= document.getElementById("sortby")
-const mostexpensice= document.getElementById("Mostexpensive")
-const chepest= document.getElementById("chepest")
-
-
-let categories=[
-    {
+const types = [
+      {
         id:burger,
-        category:"Burger",
-    },
-    
-    {
-        id:Pizza,
-        category:"pizza",
-    },
-
-    
-    {
-        id:salad,
-        category:"Salad",
-    },
-
-        
-    {
+        type: "burger",
+      },
+      {
+        id:pizza,
+        type: "pizza",
+      },
+      {
+        id:snack,
+        type: "snack",
+      },
+      {
         id:drink,
-        category:"Drink",
-    },
-
-    
-    {
+        type: "drink",
+      },
+      {
         id:dessert,
-        category:"Dessert",
-    },
-
+        type: "dessert",
+      },
 ];
+const typeDisplayDiv = document.getElementById('typeDisplay');
 
-window.onload = () => {
-    addcategory();
-};
+const ulElement = document.createElement('ul');
 
-function addcategory() {
+
+for (const item of types) {
+  const liElement = document.createElement('li');
+  liElement.textContent = item.type;
+  ulElement.appendChild(liElement);
+}
+typeDisplayDiv.appendChild(ulElement);
   
-    contentParent.innerHTML = "";
   
-    categories.forEach((category) => {
-      const userDiv = document.createElement("div");
   
-      userDiv.classList.add("flex", "justify-between");
-  
-      userDiv.innerHTML = `<h3>${categories.category}</h3> `;
-  
-      contentParent.appendChild(userDiv);
-    });
-  }
 
 
 
