@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="justify-center items-center w-full pt-7">
+    <div class="items-center justify-center flex flex-col">
+        <img src="logo.png" alt="img">
+        <h1 class="text-6xl py-3">Tortilla House</h1>
+        <p class="text-3xl py-3">for fast food,delicious food,and burgers!</p>
+        <img src="img.jpg" alt="img">
+    </div>
+    <div class="flex py-8 justify-center">
+        <input 
+        id="search"
+        type="text"
+        placeholder="Search for a dish..."
+        class=" py-4 border-2  border-solid text-4xl  text-center rounded-3xl shadow-sm mx-4" >
+
+        <select class="font-bold text-2xl p-3 rounded-lg shadow-md mx-4 "> 
+            <option value="disabled selected">sort by</option>
+            <option id="Mostexpensive"> Most Expensive</option>
+            <option id="chepest"> Chepest </option>
+        </select>
+    </div>
+
+    <div id="categories" class="py-5 "> 
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
