@@ -19,6 +19,11 @@ const types = [
         id:"dessert",
         type: "dessert",
       },
+
+      {
+        id:"salad",
+        type:"salad"
+      }
 ];
 
 const burgerlist=[
